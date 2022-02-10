@@ -1,6 +1,6 @@
 let user = document.getElementById("user");
 let email = document.getElementById("email");
-let pass = document.getElementById("password");
+let password = document.getElementById("password");
 
 let enviar = addEventListener("click",validacion);
 
@@ -23,9 +23,9 @@ function validacion(){
 		email.style.backgroundColor = "#fff";
 	}
 
-	if(pass.value ==""){
-		pass.setCustomValidity("Ingrese una contraseña valida");
-		pass.style.backgroundColor = "#ffdddd"
+	if(password.value ==""){
+		password.setCustomValidity("Ingrese una contraseña valida");
+		password.style.backgroundColor = "#ffdddd"
 		return false;
 	}else{
 		pass.setCustomValidity("");
