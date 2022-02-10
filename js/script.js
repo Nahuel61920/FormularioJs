@@ -28,16 +28,16 @@ function validacion(){
 		password.style.backgroundColor = "#ffdddd"
 		return false;
 	}else{
-		pass.setCustomValidity("");
-		pass.style.backgroundColor = "#fff"
+		password.setCustomValidity("");
+		password.style.backgroundColor = "#fff"
 	}
 
-    if(pass.value.length < 6 || pass.value.length > 8){
-        pass.setCustomValidity('La contraseña debe tener entre 6 y 8 caracteres');
-        pass.style.background = '#FFDDDD';
-        return false;
-    }else{
-        pass.setCustomValidity('');
-        pass.style.background='#FFF';
-    }
+    	if(pass.value.length < 6 || pass.value.length > 8){
+        	password.setCustomValidity('La contraseña debe tener entre 6 y 8 caracteres');
+        	password.style.background = '#FFDDDD';
+        	return false;
+    	}else{
+        	password.setCustomValidity('');
+        	password.style.background='#FFF';
+    	}
 }
